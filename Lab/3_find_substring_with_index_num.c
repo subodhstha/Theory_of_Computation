@@ -26,23 +26,23 @@ int main(){
 
 int indexOfSubstring(char s1[], char s2[])
 {
-    int slen, j,k,i;
-    slen= strlen(s2);
-    for (i = 0;s1[i+slen-1]; i++)
+    int s2len, j,k,i;
+    s2len= strlen(s2);
+    for (i = 0;s1[i+s2len-1]; i++)
     {
         k = i;
-        for ( j = 0; j <= slen-1; j++)
+        for (j = 0; j <= s2len-1; j++)
         {
             if (s1[k] != s2[j])
             {
                 break;
-                k++;
-            } 
+            }
+            k++;
         }
-        if (j == slen)
+        if (j == s2len)
         {
             return i;
         }
-        return -1;
     }
+    return -1;
 }
