@@ -1,2 +1,2 @@
 # Theory_of_Computation
-##lab of Theory of Computation
+## lab of Theory of Computation
